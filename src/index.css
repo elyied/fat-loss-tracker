@@ -24,3 +24,23 @@
   color: #60a5fa; /* Makes bold text blue */
   font-weight: 700;
 }
+
+/* Add this for tables to look right */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.prose th, .prose td {
+  border: 1px solid #334155;
+  padding: 8px;
+  text-align: left;
+}
+
+.prose th {
+  background-color: #1e293b;
+  color: #60a5fa;
+}
