@@ -25,22 +25,38 @@
   font-weight: 700;
 }
 
-/* Add this for tables to look right */
+/* --- AI TABLE STYLING --- */
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.8rem;
-  color: #cbd5e1;
-}
-
-.prose th, .prose td {
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+  background-color: rgba(30, 41, 59, 0.5); 
   border: 1px solid #334155;
-  padding: 8px;
-  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .prose th {
   background-color: #1e293b;
+  color: #60a5fa; /* AdipoX Blue */
+  padding: 12px 10px;
+  border: 1px solid #334155;
+  text-align: left;
+}
+
+.prose td {
+  padding: 10px;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+}
+
+.prose tr:nth-child(even) {
+  background-color: rgba(15, 23, 42, 0.3);
+}
+
+/* Bold text color */
+.prose strong {
   color: #60a5fa;
+  font-weight: 700;
 }

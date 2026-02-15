@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { 
   Activity, 
   Utensils, 
@@ -321,10 +322,12 @@ const GeminiModal = ({ isOpen, onClose, title, prompt, type }) => {
               <button onClick={() => setShowKeyInput(true)} className="mt-4 text-xs underline">Update API Key</button>
             </div>
           ) : (
-            <div className="prose">
-              <ReactMarkdown>{response}</ReactMarkdown>
-            </div>
-          )}
+  <div className="prose">
+    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      {response}
+    </ReactMarkdown>
+  </div>
+)}
         </div>
 
         {/* Footer */}
