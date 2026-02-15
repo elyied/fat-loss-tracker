@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { 
   Activity, 
   Utensils, 
@@ -320,10 +321,8 @@ const GeminiModal = ({ isOpen, onClose, title, prompt, type }) => {
               <button onClick={() => setShowKeyInput(true)} className="mt-4 text-xs underline">Update API Key</button>
             </div>
           ) : (
-            <div className="prose prose-invert prose-sm max-w-none">
-               <div className="whitespace-pre-line leading-relaxed text-slate-300">
-                  {response}
-               </div>
+            <div className="prose">
+              <ReactMarkdown>{response}</ReactMarkdown>
             </div>
           )}
         </div>
