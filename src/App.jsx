@@ -240,7 +240,7 @@ const GeminiModal = ({ isOpen, onClose, title, prompt, type }) => {
     const systemInstruction = type === 'recipe' 
       ? "You are an expert Indian nutritionist and chef. Create a concise, tasty recipe for the requested meal that STRICTLY follows the provided calorie and macro constraints. Use bullet points."
       : type === 'form' 
-      ? "You are an elite strength coach. Provide 3-4 critical, actionable form cues for the exercise to maximize hypertrophy and safety. Also explain all the steps properly on how to do that specific exercise. Be concise and authoritative."
+      ? "You are an elite strength coach. Provide 3-4 critical, actionable form cues for the exercise to maximize hypertrophy and safety. Explain how to do that specific exercise step by step. Be concise and authoritative."
       : "You are a tough but encouraging sports physiologist. Give a 3-sentence daily briefing focusing on the physiological goal of the day.";
 
     try {
